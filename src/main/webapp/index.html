@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Demo</title>
+
+<link rel="stylesheet" type="text/css" href="css/graph.css">
+
+<script src="js/lib/angular/1.1.0/angular.min.js"></script>
+<script src="js/lib/d3/v3/d3.min.js"></script>
+<script src="js/app/main-module.js"></script>
+<script src="js/app/controller/graph-controller.js"></script>
+<script src="js/app/directive/graph-directive.js"></script>
+<script src="js/app/service/data-service.js"></script>
+
+<!-- Mock -->
+<!-- script src="js/mock/mockDataService.js"></script -->
+<!-- Mock -->
+
+</head>
+<body ng-app="mainModule">
+	<div ng-controller="graphController">
+		<d3-bar-graph data="data"></d3-bar-graph>
+		<button ng-click="refresh()">Refresh</button>
+	</div>
+</body>
+</html>
